@@ -1,11 +1,18 @@
 package template
 
+const (
+	ConstActivityTypeTime int32 = 1
 
-type ActivityInfo struct{
+	ConstActivityTypeTimes int32 = 2
+
+	ConstActivityTypeAmount int32 = 3
+)
+
+type ActivityInfo struct {
 	// 活动类型
 	ActivityType int32
 }
 
-type Context struct{
+type Context struct {
 	ActivityInfo *ActivityInfo
 }
